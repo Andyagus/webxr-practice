@@ -10,7 +10,6 @@ import {
 } from 'react-360';
 import Stillettos from './entities/Stillettos.js'
 
-import Entity from 'Entity';
 
 export default class webxr_practice extends React.Component {
   state = {
@@ -50,7 +49,6 @@ export default class webxr_practice extends React.Component {
         </View>
 
         <View style={styles.clothingPanel}>
-          <Stilletos />
         </View>
         
 

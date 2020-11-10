@@ -11,8 +11,8 @@ export default class Stilletos extends React.Component{
                 mtl: asset('Stillettos_01.mtl')
             }}
             style={{transform:[
-          {translate: [-10, 0, -5]},
-          {scale: [1,1,1]},
+          {translate: [0, 1, 0]},
+          {scale: [0,0,0]},
 
         ]}}
             />

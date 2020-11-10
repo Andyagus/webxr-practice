@@ -5,6 +5,7 @@ import {
   Text,
   View,
 } from 'react-360';
+import Shoe from './entities/shoe.js'
 
 export default class second_attempt extends React.Component {
   render() {
@@ -41,3 +42,4 @@ const styles = StyleSheet.create({
 });
 
 AppRegistry.registerComponent('second_attempt', () => second_attempt);
+AppRegistry.registerComponent('Shoe', () => shoe);

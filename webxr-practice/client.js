@@ -16,6 +16,11 @@ function init(bundle, parent, options = {}) {
     r360.getDefaultSurface()
   );
 
+  r360.renderToLocation(
+    r360.createRoot('Stillettos',{ }),
+    r360.getDefaultLocation(),
+  );
+
   // Load the initial environment
   r360.compositor.setBackground(r360.getAssetURL('360_world.jpg'));
 }

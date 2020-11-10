@@ -5,16 +5,27 @@ import {
   Text,
   View,
   VrButton,
+  asset,
+  Location,
 } from 'react-360';
+import Stillettos from './entities/Stillettos.js'
+
+import Entity from 'Entity';
 
 export default class webxr_practice extends React.Component {
   state = {
-    
+    clothing: ""
   }
 
   _incrementCount = () => {
     console.log("hello")
   }
+
+  _clickedShoes = () => {
+    console.log("shoes")
+    this.setState({clothing: "shoes"})
+  }
+
 
   render(){
     return(
@@ -30,13 +41,19 @@ export default class webxr_practice extends React.Component {
           </Text>   
 
           <VrButton onClick={
-            
+            this._clickedShoes
           }>
             <Text>
               Shoes
             </Text>
           </VrButton>
         </View>
+
+        <View style={styles.clothingPanel}>
+          <Stilletos />
+        </View>
+        
+
     </View>
     )
   }
@@ -68,7 +85,13 @@ const styles = StyleSheet.create({
   headerText: {
     backgroundColor: 'blue'
   },
-
+  clothingPanel: {
+    width: 400,
+    height: 300,
+    backgroundColor:'red'
+  },
+  
 });
 
 AppRegistry.registerComponent('webxr_practice', () => webxr_practice);
+AppRegistry.registerComponent('Stillettos', () => Stillettos)
